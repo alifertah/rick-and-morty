@@ -9,16 +9,14 @@ function Navbar() {
     {name: "Other"},
   ]
   return (
-    <div className='bg-[#6CC1F4] flex items-center justify-around py-3 text-xl font-medium'>
+    <div className='bg-[#DBCDB6] flex items-center  justify-center text-center  text-xl font-medium w-full'>
       {
         tabs.map(tab => {
           const link = '/' + `${tab.link}`
           return(
-            <div className="">
-              <Link href={link}>
+              <Link href={link} className="hover:bg-sky-100 h-full py-3 px-20 duration-500">
                 {tab.name}
               </Link>
-            </div>
           )
         })
       }

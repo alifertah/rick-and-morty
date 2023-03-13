@@ -23,7 +23,6 @@ function characters({ data }) {
     useEffect(()=>{
         if(current === charactersEndPoint)
             return;
-    
 
     async function request(){
         const res = await fetch(current);
